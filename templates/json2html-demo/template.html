@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  {{#tags}}
+  <meta name="tags" content="{{#tags}}{{.}},{{/tags}}">
+  {{/tags}}
+</head>
+<body>
+  <main>
+    <div>
+      <!-- JSON2HTML Content block – styled by blocks/json2html-content -->
+      <div class="block json2html-content">
+        <div>
+          <div>{{title}}</div>
+        </div>
+        {{#image}}
+        <div>
+          <div>
+            <img src="{{image}}" alt="{{imageAlt}}">
+          </div>
+        </div>
+        {{/image}}
+        <div>
+          <div>{{{body}}}</div>
+        </div>
+        <div>
+          <div>
+            <ul>
+              {{#items}}
+              <li>{{.}}</li>
+              {{/items}}
+            </ul>
+          </div>
+        </div>
+        {{#ctaUrl}}
+        <div>
+          <div><a href="{{ctaUrl}}">{{ctaText}}</a></div>
+        </div>
+        {{/ctaUrl}}
+      </div>
+    </div>
+  </main>
+</body>
+</html>

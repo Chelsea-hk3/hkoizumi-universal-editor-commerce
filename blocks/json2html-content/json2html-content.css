@@ -1,0 +1,79 @@
+.json2html-content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--spacing-medium, 1.5rem) var(--spacing-small, 1rem);
+}
+
+.json2html-content-title {
+  margin-bottom: var(--spacing-small, 1rem);
+}
+
+.json2html-content-title-inner {
+  font-size: var(--heading-font-size-l, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.json2html-content-image {
+  margin-bottom: var(--spacing-medium, 1.5rem);
+}
+
+.json2html-content-media {
+  line-height: 0;
+  border-radius: var(--shape-border-radius-2, 0.5rem);
+  overflow: hidden;
+}
+
+.json2html-content-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.json2html-content-body {
+  margin-bottom: var(--spacing-medium, 1.5rem);
+}
+
+.json2html-content-body-inner {
+  line-height: 1.6;
+}
+
+.json2html-content-body-inner p {
+  margin: 0 0 1em;
+}
+
+.json2html-content-list {
+  margin-bottom: var(--spacing-medium, 1.5rem);
+}
+
+.json2html-content-list-inner ul,
+.json2html-content-list-inner ol {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+.json2html-content-cta {
+  margin-top: var(--spacing-small, 1rem);
+}
+
+.json2html-content-cta-inner a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: var(--color-brand-primary, #1473e6);
+  color: var(--background-color, #fff);
+  text-decoration: none;
+  border-radius: var(--shape-border-radius-1, 0.25rem);
+  font-weight: 500;
+}
+
+.json2html-content-cta-inner a:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 900px) {
+  .json2html-content {
+    padding: var(--spacing-big, 2rem) var(--spacing-medium, 1.5rem);
+  }
+}
